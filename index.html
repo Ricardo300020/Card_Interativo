@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card de personagem</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o CSS externo -->
+
+</head>
+<body class="">
+    <div class="text">
+        <h1>Killua</h1>
+        <h4>Hunter x Hunter</h4>
+        <img id="killua-img" src="img/killua.jpg" class="pulsar">
+        <br>
+        <p id="descricao">Killua Zoldyck é um prodígio assassino que busca liberdade e amizade<br>
+            Habilidoso, inteligente e rápido, usa eletricidade no combate. Leal, mas marcado por seu passado sombrio.</p>
+        <br>
+        <p>Nota: 0 a 10</p>
+        <br>
+        <p id="agilidade">Agilidade: 7</p>
+        <p id="forca">Força: 5</p>
+        <p id="inteligencia">Inteligência: 8</p>
+        <br>
+        <button class="azul" onclick="ativarGodspeed()">Godspeed</button>
+    </div>
+    
+    <script>
+        function ativarGodspeed() {
+            // Mudar a imagem
+            document.getElementById("killua-img").src = "img/killuagod.jpg"; // Substitua com a imagem real
+    
+            // Mudar o texto da descrição
+            document.getElementById("descricao").innerText = "Killua ativa o Godspeed, tornando-se incrivelmente rápido e praticamente intocável em combate!";
+    
+            // Atualizar os atributos
+            document.getElementById("agilidade").innerText = "Agilidade: 10";
+            document.getElementById("forca").innerText = "Força: 7";
+            document.getElementById("inteligencia").innerText = "Inteligência: 9";
+        }
+    </script>
+    
+</body>
+</html>

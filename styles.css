@@ -1,0 +1,35 @@
+
+
+/* Adiciona efeito de pulsação à imagem */
+.pulsar {
+    width: 200px; /* Define a largura da imagem como 200 pixels */
+    height: auto; /* Mantém a proporção original da imagem */
+    animation: pulsar 1.5s infinite ease-in-out; /* Aplica a animação de pulsação continuamente */
+}
+
+.text{
+    text-align: center;
+    
+}
+
+.negrito{font-weight: bold;}
+
+.azul{color: blue;}
+.verde{color: rgb(0, 255, 0);}
+.vermelho{color: darkred;}
+.branco{color: rgb(250, 250, 250);}
+.fundo{background-color: black;}
+
+
+/* Definição da animação pulsante */
+@keyframes pulsar {
+    0% {
+        transform: scale(1); /* Tamanho original da imagem */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta levemente a imagem em 10% */
+    }
+    100% {
+        transform: scale(1); /* Retorna ao tamanho original */
+    }
+}
